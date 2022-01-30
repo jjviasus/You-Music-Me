@@ -10,10 +10,19 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    //var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+//        // The window that gets created when our application loads up
+//        let window = UIWindow(frame: UIScreen.main.bounds) // takes up the entirety of the screens bounds
+//
+//        let navVC = UINavigationController(rootViewController: ViewController())
+//        window.rootViewController = navVC
+//        window.makeKeyAndVisible()
+//        self.window = window
+        
         return true
     }
 
