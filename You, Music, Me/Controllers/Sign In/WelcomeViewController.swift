@@ -37,20 +37,17 @@ class WelcomeViewController: UIViewController {
     
     // need to annotate it with @objc so that the selector can reference it
     @objc func didTapLoginButton() {
-//        let authVC = AuthViewController()
-//
-//        // Tells our View Controller that the user has successfully logged in
-//        authVC.completionHandler = { [weak self] success in
-//            // Handle the result of the sign in on the main thread
-//            DispatchQueue.main.async {
-//                self?.handleSignIn(success: success)
-//            }
-//        }
-//
-//        present(authVC, animated: true, completion: nil)
-        let mainTabBarVC = TabBarViewController()
-        mainTabBarVC.modalPresentationStyle = .fullScreen // so the user can't swipe it away
-        present(mainTabBarVC, animated: false)
+        let authVC = AuthViewController()
+
+        // Tells our View Controller that the user has successfully logged in
+        authVC.completionHandler = { [weak self] success in
+            // Handle the result of the sign in on the main thread
+            DispatchQueue.main.async {
+                self?.handleSignIn(success: success)
+            }
+        }
+
+        navigationController?.pushViewController(authVC, animated: true)
     }
     
     private func handleSignIn(success: Bool) {
