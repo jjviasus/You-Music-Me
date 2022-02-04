@@ -9,6 +9,9 @@ import Foundation
 import UIKit
 
 class EventsViewController: UIViewController {
+    
+    var user: User!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = customColor

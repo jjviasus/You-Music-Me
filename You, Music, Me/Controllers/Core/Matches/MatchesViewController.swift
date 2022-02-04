@@ -11,14 +11,14 @@ import UIKit
 class MatchesViewController: UIViewController {
     
     let matchesTableView = UITableView()
-    
-    var matchList = [User]()
+    var user: User!
+    var matchList: [User]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         for x in 0...5 {
-            let sampleUser = User(name: "Person \(x)", gender: Gender.female, preference: Gender.male, favoriteArtists: [])
+            let sampleUser = User(name: "Person \(x)", gender: Gender.female, preference: Gender.male)
             matchList.append(sampleUser)
         }
         

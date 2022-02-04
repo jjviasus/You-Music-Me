@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D015418027AD9F40007BB0C3 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = D015417F27AD9F40007BB0C3 /* Artist.swift */; };
+		D015418827ADA039007BB0C3 /* YouMusicMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D015418727ADA039007BB0C3 /* YouMusicMeTests.swift */; };
 		D01E5B2427A7A8EA00F5316E /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01E5B2327A7A8EA00F5316E /* ChatViewController.swift */; };
 		D062BCFE27A601BF0003E2D8 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D062BCFD27A601BF0003E2D8 /* AuthViewController.swift */; };
 		D062BD0127A62DC90003E2D8 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D062BD0027A62DC90003E2D8 /* AuthManager.swift */; };
@@ -23,7 +25,20 @@
 		D0C58E2927A3A84A00126A5C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C58E2827A3A84A00126A5C /* User.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D015418927ADA039007BB0C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0C58E0827A3983500126A5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0C58E0F27A3983500126A5C;
+			remoteInfo = "You, Music, Me";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		D015417F27AD9F40007BB0C3 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		D015418527ADA039007BB0C3 /* YouMusicMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouMusicMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D015418727ADA039007BB0C3 /* YouMusicMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouMusicMeTests.swift; sourceTree = "<group>"; };
 		D01E5B2327A7A8EA00F5316E /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		D062BCFD27A601BF0003E2D8 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		D062BD0027A62DC90003E2D8 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
@@ -43,6 +58,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D015418227ADA039007BB0C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D0C58E0D27A3983500126A5C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -53,6 +75,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D015417E27AD94A6007BB0C3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D015418627ADA039007BB0C3 /* YouMusicMeTests */ = {
+			isa = PBXGroup;
+			children = (
+				D015418727ADA039007BB0C3 /* YouMusicMeTests.swift */,
+			);
+			path = YouMusicMeTests;
+			sourceTree = "<group>";
+		};
 		D01E5B2127A7A88800F5316E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				D0C58E1227A3983500126A5C /* You, Music, Me */,
+				D015418627ADA039007BB0C3 /* YouMusicMeTests */,
 				D0C58E1127A3983500126A5C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -145,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				D0C58E1027A3983500126A5C /* You, Music, Me.app */,
+				D015418527ADA039007BB0C3 /* YouMusicMeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,6 +191,7 @@
 		D0C58E1227A3983500126A5C /* You, Music, Me */ = {
 			isa = PBXGroup;
 			children = (
+				D015417E27AD94A6007BB0C3 /* ViewModels */,
 				D01E5B2127A7A88800F5316E /* Resources */,
 				D062BCFF27A62DB90003E2D8 /* Managers */,
 				D0C58E2727A3A82700126A5C /* Models */,
@@ -167,6 +207,7 @@
 			children = (
 				D0C58E2827A3A84A00126A5C /* User.swift */,
 				D062BD0227A630830003E2D8 /* AuthResponse.swift */,
+				D015417F27AD9F40007BB0C3 /* Artist.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -174,6 +215,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D015418427ADA039007BB0C3 /* YouMusicMeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D015418B27ADA039007BB0C3 /* Build configuration list for PBXNativeTarget "YouMusicMeTests" */;
+			buildPhases = (
+				D015418127ADA039007BB0C3 /* Sources */,
+				D015418227ADA039007BB0C3 /* Frameworks */,
+				D015418327ADA039007BB0C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D015418A27ADA039007BB0C3 /* PBXTargetDependency */,
+			);
+			name = YouMusicMeTests;
+			productName = YouMusicMeTests;
+			productReference = D015418527ADA039007BB0C3 /* YouMusicMeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D0C58E0F27A3983500126A5C /* You, Music, Me */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0C58E2427A3983700126A5C /* Build configuration list for PBXNativeTarget "You, Music, Me" */;
@@ -201,6 +260,10 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					D015418427ADA039007BB0C3 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = D0C58E0F27A3983500126A5C;
+					};
 					D0C58E0F27A3983500126A5C = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -220,11 +283,19 @@
 			projectRoot = "";
 			targets = (
 				D0C58E0F27A3983500126A5C /* You, Music, Me */,
+				D015418427ADA039007BB0C3 /* YouMusicMeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D015418327ADA039007BB0C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D0C58E0E27A3983500126A5C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -237,6 +308,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D015418127ADA039007BB0C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D015418827ADA039007BB0C3 /* YouMusicMeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D0C58E0C27A3983500126A5C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -250,6 +329,7 @@
 				D062BCFE27A601BF0003E2D8 /* AuthViewController.swift in Sources */,
 				D062BD0327A630830003E2D8 /* AuthResponse.swift in Sources */,
 				D062BD0727A637A30003E2D8 /* BrowseViewController.swift in Sources */,
+				D015418027AD9F40007BB0C3 /* Artist.swift in Sources */,
 				D0C58E1427A3983500126A5C /* AppDelegate.swift in Sources */,
 				D01E5B2427A7A8EA00F5316E /* ChatViewController.swift in Sources */,
 				D0C58E1627A3983500126A5C /* SceneDelegate.swift in Sources */,
@@ -257,6 +337,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D015418A27ADA039007BB0C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0C58E0F27A3983500126A5C /* You, Music, Me */;
+			targetProxy = D015418927ADA039007BB0C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D0C58E1E27A3983700126A5C /* LaunchScreen.storyboard */ = {
@@ -270,6 +358,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D015418C27ADA039007BB0C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.justinviasus.YouMusicMeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/You, Music, Me.app/You, Music, Me";
+			};
+			name = Debug;
+		};
+		D015418D27ADA039007BB0C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.justinviasus.YouMusicMeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/You, Music, Me.app/You, Music, Me";
+			};
+			name = Release;
+		};
 		D0C58E2227A3983700126A5C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -441,6 +563,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D015418B27ADA039007BB0C3 /* Build configuration list for PBXNativeTarget "YouMusicMeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D015418C27ADA039007BB0C3 /* Debug */,
+				D015418D27ADA039007BB0C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D0C58E0B27A3983500126A5C /* Build configuration list for PBXProject "You, Music, Me" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
