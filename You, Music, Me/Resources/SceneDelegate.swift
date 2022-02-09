@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         
         // if the user is signed in, we present the tab bar controller, otherwise the welcome controller.
-        if AuthManager.shared.isSignedIn {
+        if SpotifyAuthManager.shared.isSignedIn {
             // Show the TabBarViewController
             window.rootViewController = TabBarViewController()
         } else {

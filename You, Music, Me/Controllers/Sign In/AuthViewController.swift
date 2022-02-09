@@ -39,7 +39,7 @@ class AuthViewController: UIViewController, WKNavigationDelegate {
         view.addSubview(webView)
         
         // Unwrap the sign in URL
-        guard let url = AuthManager.shared.signInURL else { return }
+        guard let url = SpotifyAuthManager.shared.signInURL else { return }
         
         // Load the url in the web view
         webView.load(URLRequest(url: url))
@@ -61,7 +61,7 @@ class AuthViewController: UIViewController, WKNavigationDelegate {
         guard let code = URLComponents(string: url.absoluteString)?.queryItems?.first(where: { $0.name == "code"  })?.value else { return }
         
         // Exchange the code for access token
-        AuthManager.shared.exchangeCodeForToken(code: code) { [weak self] success in
+        SpotifyAuthManager.shared.exchangeCodeForToken(code: code) { [weak self] success in
             DispatchQueue.main.async {
                 self?.navigationController?.popToRootViewController(animated: true)
                 self?.completionHandler?(success)

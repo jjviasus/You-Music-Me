@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum Gender {
     case male
@@ -18,17 +19,21 @@ class User {
     var gender: Gender
     var preference: Gender
     var favoriteArtists: [Artist]
-    var matches: [User]
+    var matchList: [User]
     var likedUsers: [User]
+    var savedEvents: [Event]
+    //var profileImage: UIImage
     
-    init(name: String, gender: Gender, preference: Gender) {
+    init(name: String, gender: Gender, preference: Gender) { //, profileImage: UIImage
         self.userID = UUID().uuidString // this needs to be uniquely generated for each user
         self.name = name
         self.gender = gender
         self.preference = preference
         self.favoriteArtists = []
-        self.matches = []
+        self.matchList = []
         self.likedUsers = []
+        self.savedEvents = []
+        //self.profileImage = profileImage
     }
     
     // MARK: Suggestions

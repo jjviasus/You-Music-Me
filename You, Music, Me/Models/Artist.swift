@@ -10,8 +10,10 @@ import Foundation
 class Artist {
     // probably provided by spotify
     let artistID: String
+    let name: String
     
-    init(artistID: String) {
+    init(artistID: String, name: String) {
         self.artistID = artistID
+        self.name = name
     }
 }

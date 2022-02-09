@@ -11,8 +11,8 @@
 		D015418827ADA039007BB0C3 /* YouMusicMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D015418727ADA039007BB0C3 /* YouMusicMeTests.swift */; };
 		D01E5B2427A7A8EA00F5316E /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01E5B2327A7A8EA00F5316E /* ChatViewController.swift */; };
 		D062BCFE27A601BF0003E2D8 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D062BCFD27A601BF0003E2D8 /* AuthViewController.swift */; };
-		D062BD0127A62DC90003E2D8 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D062BD0027A62DC90003E2D8 /* AuthManager.swift */; };
-		D062BD0327A630830003E2D8 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D062BD0227A630830003E2D8 /* AuthResponse.swift */; };
+		D062BD0127A62DC90003E2D8 /* SpotifyAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D062BD0027A62DC90003E2D8 /* SpotifyAuthManager.swift */; };
+		D062BD0327A630830003E2D8 /* SpotifyAuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D062BD0227A630830003E2D8 /* SpotifyAuthResponse.swift */; };
 		D062BD0527A635460003E2D8 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D062BD0427A635460003E2D8 /* TabBarViewController.swift */; };
 		D062BD0727A637A30003E2D8 /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D062BD0627A637A30003E2D8 /* BrowseViewController.swift */; };
 		D062BD0927A637AF0003E2D8 /* MatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D062BD0827A637AF0003E2D8 /* MatchesViewController.swift */; };
@@ -23,6 +23,8 @@
 		D0C58E1D27A3983700126A5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0C58E1C27A3983700126A5C /* Assets.xcassets */; };
 		D0C58E2027A3983700126A5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0C58E1E27A3983700126A5C /* LaunchScreen.storyboard */; };
 		D0C58E2927A3A84A00126A5C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C58E2827A3A84A00126A5C /* User.swift */; };
+		D0EB756927B33FD400F4952D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB756827B33FD400F4952D /* Event.swift */; };
+		D0EB756B27B352BE00F4952D /* TicketmasterAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB756A27B352BE00F4952D /* TicketmasterAuthManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +43,8 @@
 		D015418727ADA039007BB0C3 /* YouMusicMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouMusicMeTests.swift; sourceTree = "<group>"; };
 		D01E5B2327A7A8EA00F5316E /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		D062BCFD27A601BF0003E2D8 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
-		D062BD0027A62DC90003E2D8 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
-		D062BD0227A630830003E2D8 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		D062BD0027A62DC90003E2D8 /* SpotifyAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyAuthManager.swift; sourceTree = "<group>"; };
+		D062BD0227A630830003E2D8 /* SpotifyAuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyAuthResponse.swift; sourceTree = "<group>"; };
 		D062BD0427A635460003E2D8 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		D062BD0627A637A30003E2D8 /* BrowseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
 		D062BD0827A637AF0003E2D8 /* MatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +57,8 @@
 		D0C58E1F27A3983700126A5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0C58E2127A3983700126A5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0C58E2827A3A84A00126A5C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D0EB756827B33FD400F4952D /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		D0EB756A27B352BE00F4952D /* TicketmasterAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketmasterAuthManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,7 +169,8 @@
 		D062BCFF27A62DB90003E2D8 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				D062BD0027A62DC90003E2D8 /* AuthManager.swift */,
+				D062BD0027A62DC90003E2D8 /* SpotifyAuthManager.swift */,
+				D0EB756A27B352BE00F4952D /* TicketmasterAuthManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -206,8 +211,9 @@
 			isa = PBXGroup;
 			children = (
 				D0C58E2827A3A84A00126A5C /* User.swift */,
-				D062BD0227A630830003E2D8 /* AuthResponse.swift */,
+				D062BD0227A630830003E2D8 /* SpotifyAuthResponse.swift */,
 				D015417F27AD9F40007BB0C3 /* Artist.swift */,
+				D0EB756827B33FD400F4952D /* Event.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -324,14 +330,16 @@
 				D062BD0527A635460003E2D8 /* TabBarViewController.swift in Sources */,
 				D0C58E2927A3A84A00126A5C /* User.swift in Sources */,
 				D062BD0927A637AF0003E2D8 /* MatchesViewController.swift in Sources */,
-				D062BD0127A62DC90003E2D8 /* AuthManager.swift in Sources */,
+				D062BD0127A62DC90003E2D8 /* SpotifyAuthManager.swift in Sources */,
 				D0C58E1827A3983500126A5C /* WelcomeViewController.swift in Sources */,
 				D062BCFE27A601BF0003E2D8 /* AuthViewController.swift in Sources */,
-				D062BD0327A630830003E2D8 /* AuthResponse.swift in Sources */,
+				D062BD0327A630830003E2D8 /* SpotifyAuthResponse.swift in Sources */,
 				D062BD0727A637A30003E2D8 /* BrowseViewController.swift in Sources */,
 				D015418027AD9F40007BB0C3 /* Artist.swift in Sources */,
+				D0EB756B27B352BE00F4952D /* TicketmasterAuthManager.swift in Sources */,
 				D0C58E1427A3983500126A5C /* AppDelegate.swift in Sources */,
 				D01E5B2427A7A8EA00F5316E /* ChatViewController.swift in Sources */,
+				D0EB756927B33FD400F4952D /* Event.swift in Sources */,
 				D0C58E1627A3983500126A5C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

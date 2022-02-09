@@ -10,8 +10,8 @@ import Foundation
 // Note: Managers are objects in the app that allow us to perform operations across the whole app. For example: Authentication Management (AuthManager), to make sure the user is logged in.
 
 // AuthManager is responsible for handling all the authentication logic.
-final class AuthManager {
-    static let shared = AuthManager()
+final class SpotifyAuthManager {
+    static let shared = SpotifyAuthManager()
     
     private var refreshingToken = false
     
@@ -96,7 +96,7 @@ final class AuthManager {
             }
             
             do {
-                let result = try JSONDecoder().decode(AuthResponse.self, from: data)
+                let result = try JSONDecoder().decode(SpotifyAuthResponse.self, from: data)
                 self?.cacheToken(result: result)
                 completion(true)
             } catch {
@@ -187,7 +187,7 @@ final class AuthManager {
             }
             
             do {
-                let result = try JSONDecoder().decode(AuthResponse.self, from: data)
+                let result = try JSONDecoder().decode(SpotifyAuthResponse.self, from: data)
                 self?.onRefreshBlocks.forEach { $0(result.access_token) } // for each, we can execute the block and pass back the token
                 self?.onRefreshBlocks.removeAll() // remove everything so we don't redudantly call one of the blocks we have saved
                 self?.cacheToken(result: result)
@@ -200,7 +200,7 @@ final class AuthManager {
         task.resume()
     }
     
-    private func cacheToken(result: AuthResponse) {
+    private func cacheToken(result: SpotifyAuthResponse) {
         UserDefaults.standard.setValue(result.access_token, forKey: "access_token")
         if let refresh_token = result.refresh_token {
             // we cache it if it is not nil. we do this b/c nil will overwrite the initial token that we cached.
