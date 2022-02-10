@@ -25,6 +25,7 @@
 		D0C58E2927A3A84A00126A5C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C58E2827A3A84A00126A5C /* User.swift */; };
 		D0EB756927B33FD400F4952D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB756827B33FD400F4952D /* Event.swift */; };
 		D0EB756B27B352BE00F4952D /* TicketmasterAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB756A27B352BE00F4952D /* TicketmasterAuthManager.swift */; };
+		D0EB756D27B3682400F4952D /* MatchedUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB756C27B3682400F4952D /* MatchedUserTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		D0C58E2827A3A84A00126A5C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D0EB756827B33FD400F4952D /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		D0EB756A27B352BE00F4952D /* TicketmasterAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketmasterAuthManager.swift; sourceTree = "<group>"; };
+		D0EB756C27B3682400F4952D /* MatchedUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedUserTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				D0C58E1E27A3983700126A5C /* LaunchScreen.storyboard */,
+				D0EB756C27B3682400F4952D /* MatchedUserTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D062BD0B27A637BB0003E2D8 /* EventsViewController.swift in Sources */,
+				D0EB756D27B3682400F4952D /* MatchedUserTableViewCell.swift in Sources */,
 				D062BD0527A635460003E2D8 /* TabBarViewController.swift in Sources */,
 				D0C58E2927A3A84A00126A5C /* User.swift in Sources */,
 				D062BD0927A637AF0003E2D8 /* MatchesViewController.swift in Sources */,

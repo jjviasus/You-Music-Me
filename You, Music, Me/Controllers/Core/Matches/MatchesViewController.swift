@@ -11,20 +11,14 @@ import UIKit
 class MatchesViewController: UIViewController {
     
     let matchesTableView = UITableView()
-    var user: User!
-    var matchList: [User]!
+    var matchList: [User]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // get the match list from the user
-        matchList = []
-        
-        // build sample list
-        for x in 0...5 {
-            let sampleUser = User(name: "Person \(x)", gender: Gender.female, preference: Gender.male) //, profileImage: UIImage(systemName: "person.crop.square.fill")!
-            matchList.append(sampleUser)
-        }
+        let tabBarVC = tabBarController as! TabBarViewController
+        matchList = tabBarVC.user?.matchList
         
         view.backgroundColor = customColor
         view.addSubview(matchesTableView)
@@ -49,7 +43,7 @@ extension MatchesViewController: UITableViewDataSource {
     
     // The amount of rows we want to return in a given section
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return matchList.count
+        return matchList?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -57,7 +51,7 @@ extension MatchesViewController: UITableViewDataSource {
         let cell = matchesTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
         // Provide the cell with the correct data
-        cell.textLabel?.text = matchList[indexPath.row].name
+        cell.textLabel?.text = matchList?[indexPath.row].name
         
         return cell
     }
@@ -75,7 +69,7 @@ extension MatchesViewController: UITableViewDelegate {
         // TODO: Implement a custom user cell so that we can extract the name?
     
         // Get the name of the user who's cell was tapped
-        let name = matchList[indexPath.row].name
+        let name = matchList?[indexPath.row].name
         
         // Set up the new chat vc
         let chatVC = ChatViewController()

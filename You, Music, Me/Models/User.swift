@@ -21,8 +21,22 @@ class User {
     var favoriteArtists: [Artist]
     var matchList: [User]
     var likedUsers: [User]
-    var savedEvents: [Event]
+    //var savedEvents: [Event]
     //var profileImage: UIImage
+    
+    // Instantiates a default user object with dummy data
+    init() {
+        let kygo = Artist(artistID: "123", name: "Kygo")
+        let tea = User(name: "Teodora Misic", gender: Gender.female, preference: Gender.male)
+        
+        self.userID = UUID().uuidString
+        self.name = "Justin Viasus"
+        self.gender = Gender.male
+        self.preference = Gender.female
+        self.favoriteArtists = [kygo]
+        self.matchList = [tea]
+        self.likedUsers = []
+    }
     
     init(name: String, gender: Gender, preference: Gender) { //, profileImage: UIImage
         self.userID = UUID().uuidString // this needs to be uniquely generated for each user
@@ -32,7 +46,7 @@ class User {
         self.favoriteArtists = []
         self.matchList = []
         self.likedUsers = []
-        self.savedEvents = []
+        //self.savedEvents = []
         //self.profileImage = profileImage
     }
     

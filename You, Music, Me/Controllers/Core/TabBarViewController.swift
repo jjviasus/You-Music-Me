@@ -8,7 +8,10 @@
 import Foundation
 import UIKit
 
-class TabBarViewController: UITabBarController {    
+class TabBarViewController: UITabBarController {
+    
+    var user: User?
+    
     override func viewDidLoad() {
         self.tabBar.tintColor = .systemCyan
         
@@ -21,7 +24,7 @@ class TabBarViewController: UITabBarController {
         browseVC.title = "Browse"
         matchesVC.title = "Matches"
         eventsVC.title = "Events"
-        
+                
         let nav1 = UINavigationController(rootViewController: browseVC)
         let nav2 = UINavigationController(rootViewController: matchesVC)
         let nav3 = UINavigationController(rootViewController: eventsVC)
@@ -40,5 +43,10 @@ class TabBarViewController: UITabBarController {
         
         // So the user can't swipe it away
         self.modalPresentationStyle = .fullScreen
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        // network call should be made here, but for now use this dummy data
+        self.user = User()
     }
 }
